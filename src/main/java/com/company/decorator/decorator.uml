@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-280.5" y="93.0">com.company.decorator.DarkRoast</node>
+    <node x="4.5" y="0.0">com.company.decorator.Beverage</node>
+    <node x="-213.0" y="310.0">com.company.decorator.HouseBlend</node>
+    <node x="290.0" y="155.0">com.company.decorator.CondimentDecorator</node>
+    <node x="-221.0" y="198.0">com.company.decorator.Espresso</node>
+    <node x="-300.0" y="-2.0">com.company.decorator.Decaf</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.decorator.DarkRoast" target="com.company.decorator.Beverage">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.decorator.Espresso" target="com.company.decorator.Beverage">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.decorator.HouseBlend" target="com.company.decorator.Beverage">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.decorator.CondimentDecorator" target="com.company.decorator.Beverage">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="com.company.decorator.Decaf" target="com.company.decorator.Beverage">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="125.0" y="26.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
