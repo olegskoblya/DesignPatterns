@@ -6,8 +6,12 @@ import com.company.decorator.Beverage;
  * Created by oleg on 6/11/15.
  */
 public class Decaf extends Beverage {
+    public Decaf() {
+        setDescription("Without coffeine");
+    }
+
     @Override
     public double cost() {
-        return 0;
+        return 1.05;
     }
 }
