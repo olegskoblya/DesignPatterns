@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-104.5" y="-128.0">com.company.decorator.thirdtry.Beverage</node>
+    <node x="-83.0" y="247.0">com.company.decorator.thirdtry.Whip</node>
+    <node x="111.5" y="149.0">com.company.decorator.thirdtry.Espresso</node>
+    <node x="-346.0" y="128.5">com.company.decorator.thirdtry.CondimentDecorator</node>
+    <node x="-26.5" y="149.0">com.company.decorator.thirdtry.Decaf</node>
+    <node x="-399.0" y="247.0">com.company.decorator.thirdtry.Mocha</node>
+    <node x="-241.0" y="247.0">com.company.decorator.thirdtry.Soy</node>
+    <node x="-557.0" y="247.0">com.company.decorator.thirdtry.Milk</node>
+    <node x="-164.5" y="149.0">com.company.decorator.thirdtry.DarkRoast</node>
+    <node x="268.5" y="150.0">com.company.decorator.thirdtry.HouseBlend</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.decorator.thirdtry.Soy" target="com.company.decorator.thirdtry.CondimentDecorator">
+      <point x="0.0" y="-34.0" />
+      <point x="-172.0" y="227.0" />
+      <point x="-234.375" y="227.0" />
+      <point x="16.625" y="14.0" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.Whip" target="com.company.decorator.thirdtry.CondimentDecorator">
+      <point x="0.0" y="-34.0" />
+      <point x="-14.0" y="217.0" />
+      <point x="-201.125" y="217.0" />
+      <point x="49.875" y="14.0" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.CondimentDecorator" target="com.company.decorator.thirdtry.Beverage">
+      <point x="0.0" y="-14.0" />
+      <point x="-251.0" y="119.0" />
+      <point x="-46.69999999999999" y="119.0" />
+      <point x="-79.19999999999999" y="54.5" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.Decaf" target="com.company.decorator.thirdtry.Beverage">
+      <point x="0.0" y="-24.0" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.Espresso" target="com.company.decorator.thirdtry.Beverage">
+      <point x="0.0" y="-24.0" />
+      <point x="170.5" y="129.0" />
+      <point x="72.09999999999991" y="129.0" />
+      <point x="39.599999999999966" y="54.5" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.Mocha" target="com.company.decorator.thirdtry.CondimentDecorator">
+      <point x="0.0" y="-34.0" />
+      <point x="-330.0" y="227.0" />
+      <point x="-267.625" y="227.0" />
+      <point x="-16.625" y="14.0" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.Milk" target="com.company.decorator.thirdtry.CondimentDecorator">
+      <point x="0.0" y="-34.0" />
+      <point x="-488.0" y="217.0" />
+      <point x="-300.875" y="217.0" />
+      <point x="-49.875" y="14.0" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.HouseBlend" target="com.company.decorator.thirdtry.Beverage">
+      <point x="0.0" y="-24.0" />
+      <point x="272.5" y="120.0" />
+      <point x="111.69999999999993" y="119.0" />
+      <point x="79.19999999999993" y="54.5" />
+    </edge>
+    <edge source="com.company.decorator.thirdtry.DarkRoast" target="com.company.decorator.thirdtry.Beverage">
+      <point x="0.0" y="-24.0" />
+      <point x="-105.5" y="129.0" />
+      <point x="-7.100000000000023" y="129.0" />
+      <point x="-39.60000000000002" y="54.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="134.5" y="120.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

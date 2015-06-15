@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="236.0">com.company.meteo.WeatherData</node>
+    <node x="216.75" y="547.0">com.company.meteo.CurrentConditionDisplay</node>
+    <node x="5.0" y="449.0">com.company.meteo.DisplyaElement</node>
+    <node x="480.0" y="290.0">com.company.meteo.WeatherObserver</node>
+    <node x="538.5" y="546.0">com.company.meteo.ForecastDisplay</node>
+    <node x="0.0" y="547.0">com.company.meteo.StatisticsDisplay</node>
+    <node x="40.0" y="0.0">com.company.meteo.WeatherSubject</node>
+    <node x="65.5" y="138.0">com.company.meteo.AbstractWeatherSubject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.meteo.WeatherData" target="com.company.meteo.AbstractWeatherSubject">
+      <point x="0.0" y="-84.0" />
+      <point x="0.0" y="24.0" />
+    </edge>
+    <edge source="com.company.meteo.AbstractWeatherSubject" target="com.company.meteo.WeatherObserver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.meteo.StatisticsDisplay" target="com.company.meteo.WeatherObserver">
+      <point x="34.75" y="-34.0" />
+      <point x="104.25" y="527.0" />
+      <point x="205.75" y="527.0" />
+      <point x="-61.75" y="24.0" />
+    </edge>
+    <edge source="com.company.meteo.ForecastDisplay" target="com.company.meteo.DisplyaElement">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.meteo.AbstractWeatherSubject" target="com.company.meteo.WeatherSubject">
+      <point x="0.0" y="-24.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="com.company.meteo.CurrentConditionDisplay" target="com.company.meteo.DisplyaElement">
+      <point x="-37.5" y="-34.0" />
+      <point x="254.25" y="517.0" />
+      <point x="94.25" y="517.0" />
+      <point x="29.75" y="24.0" />
+    </edge>
+    <edge source="com.company.meteo.CurrentConditionDisplay" target="com.company.meteo.WeatherObserver">
+      <point x="37.5" y="-34.0" />
+      <point x="61.75" y="24.0" />
+    </edge>
+    <edge source="com.company.meteo.StatisticsDisplay" target="com.company.meteo.DisplyaElement">
+      <point x="-34.75" y="-34.0" />
+      <point x="-29.75" y="24.0" />
+    </edge>
+    <edge source="com.company.meteo.ForecastDisplay" target="com.company.meteo.WeatherObserver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="161.5" y="437.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
