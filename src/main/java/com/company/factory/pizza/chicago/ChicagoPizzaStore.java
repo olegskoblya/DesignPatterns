@@ -8,7 +8,18 @@ import com.company.factory.pizza.PizzaStore;
  */
 public class ChicagoPizzaStore extends PizzaStore {
     @Override
-    Pizza createPizza(String type) {
-        return null;
+    public Pizza createPizza(String type) {
+        Pizza pizza = null;
+        switch (type) {
+            case "cheese": pizza = new ChicagoStyleCheesePizza();
+                break;
+            case "veggie": pizza = new ChicagoStyleCheesePizza();
+                break;
+            case "clam": pizza = new ChicagoStyleClamPizza();
+                break;
+            case "pepperoni": pizza = new ChicagoStylePepperoniPizza();
+                break;
+        }
+        return pizza;
     }
 }

@@ -52,4 +52,8 @@ public abstract class Pizza {
     public void setToppings(ArrayList<String> toppings) {
         this.toppings = toppings;
     }
+
+    public void addTopping(String topping) {
+        toppings.add(topping);
+    }
 }
