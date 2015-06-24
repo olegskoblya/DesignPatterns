@@ -68,10 +68,14 @@ public class CommandTest extends Assert{
 
         System.out.println(remoteControl);
 
-        remoteControl.onButtonWasPushed(0);
         remoteControl.offButtonWasPushed(0);
-        remoteControl.onButtonWasPushed(1);
+        remoteControl.onButtonWasPushed(0);
+        remoteControl.undoButtonWasPushed();
+
         remoteControl.offButtonWasPushed(1);
+        remoteControl.onButtonWasPushed(1);
+        remoteControl.undoButtonWasPushed();
+
         remoteControl.onButtonWasPushed(2);
         remoteControl.offButtonWasPushed(2);
         remoteControl.onButtonWasPushed(3);
