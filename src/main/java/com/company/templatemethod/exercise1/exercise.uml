@@ -2,12 +2,34 @@
 <Diagram>
   <ID>JAVA</ID>
   <OriginalElement />
-  <nodes />
+  <nodes>
+    <node x="623.5" y="405.0">com.company.templatemethod.exercise1.Tea</node>
+    <node x="126.75" y="-24.0">com.company.templatemethod.exercise1.Beverage</node>
+    <node x="-31.0" y="325.0">com.company.templatemethod.exercise1.Coffee</node>
+  </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <edges>
+    <edge source="com.company.templatemethod.exercise1.Coffee" target="com.company.templatemethod.exercise1.Beverage">
+      <point x="0.0" y="-52.0" />
+      <point x="206.5" y="216.0" />
+      <point x="205.75" y="129.0" />
+      <point x="-59.0" y="52.0" />
+    </edge>
+    <edge source="com.company.templatemethod.exercise1.Tea" target="com.company.templatemethod.exercise1.Beverage">
+      <point x="0.0" y="-52.0" />
+      <point x="333.0" y="221.0" />
+      <point x="323.75" y="129.0" />
+      <point x="59.0" y="52.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="318.5" y="134.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 

@@ -15,6 +15,7 @@ public class SwingObserverExample {
     }
 
     public void go() {
+
         frame = new JFrame();
         JButton button = new JButton("Should I do it?");
         button.addActionListener(event-> {

@@ -2,6 +2,8 @@ package designpatternstest;
 
 import com.company.singleton.Singleton;
 import com.company.singleton.chocolate1.ChocolateBoiler;
+import com.company.templatemethod.exercise1.Coffee;
+import com.company.templatemethod.exercise1.Tea;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -31,4 +33,6 @@ public class PatternsTest extends Assert {
         }
         assertEquals(null, ex);
     }
+
+
 }
