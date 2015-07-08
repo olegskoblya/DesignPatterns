@@ -22,7 +22,7 @@ public class DuckSortTestDrive extends Assert {
         System.out.println("Before sorting...");
         ducksDisplay(ducks);
         Arrays.sort(ducks);
-        System.out.println("After sorting...");
+        System.out.println("\nAfter sorting...");
         ducksDisplay(ducks);
     }
 
