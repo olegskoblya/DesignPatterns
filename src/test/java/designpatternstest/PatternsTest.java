@@ -1,5 +1,8 @@
 package designpatternstest;
 
+import com.company.managedcollections.first.DinerMenu;
+import com.company.managedcollections.first.PancakeHouseMenu;
+import com.company.managedcollections.first.Waitress;
 import com.company.singleton.Singleton;
 import com.company.singleton.chocolate1.ChocolateBoiler;
 import com.company.templatemethod.exercise1.Coffee;
@@ -32,6 +35,14 @@ public class PatternsTest extends Assert {
             ex = e;
         }
         assertEquals(null, ex);
+    }
+
+    @Test
+    public void iteratorTest() {
+        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
+        DinerMenu dinerMenu = new DinerMenu();
+        Waitress waitress = new Waitress(dinerMenu, pancakeHouseMenu);
+        waitress.printMenu();
     }
 
 

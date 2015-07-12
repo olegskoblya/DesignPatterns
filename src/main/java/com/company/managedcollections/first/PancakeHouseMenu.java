@@ -2,11 +2,12 @@ package com.company.managedcollections.first;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by oleg on 10.07.15.
  */
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
     ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
@@ -21,7 +22,13 @@ public class PancakeHouseMenu {
         MenuItem menuItem = new MenuItem(name, description, vegeterian, price);
         menuItems.add(menuItem);
     }
+
+    /*
     public ArrayList<MenuItem> getMenuItems() {
         return menuItems;
+    }*/
+
+    public Iterator createIterator() {
+        return menuItems.iterator();
     }
 }
