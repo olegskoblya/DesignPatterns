@@ -29,7 +29,6 @@ public class DinerMenu implements Menu{
             menuItems[numberOfItems] = menuItem;
             numberOfItems++;
         }
-
     }
 
     /*public MenuItem[] getMenuItems() {

@@ -1,8 +1,9 @@
 package designpatternstest;
 
-import com.company.managedcollections.first.DinerMenu;
-import com.company.managedcollections.first.PancakeHouseMenu;
-import com.company.managedcollections.first.Waitress;
+import com.company.managedcollections.second.Menu;
+import com.company.managedcollections.second.MenuComponent;
+import com.company.managedcollections.second.MenuItem;
+import com.company.managedcollections.second.Waitress;
 import com.company.singleton.Singleton;
 import com.company.singleton.chocolate1.ChocolateBoiler;
 import com.company.templatemethod.exercise1.Coffee;
@@ -11,6 +12,8 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Calendar;
 
 /**
  * Created by oleg on 18.06.15.
@@ -38,14 +41,25 @@ public class PatternsTest extends Assert {
     }
 
     @Test
-    public void iteratorTest() {
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
-        Waitress waitress = new Waitress(dinerMenu, pancakeHouseMenu);
+    public void menuComponentTestDrive() {
+        MenuComponent pancakeHouseMenu = new Menu("PANCAKE HOUSE MENU", "Breakfast");
+        MenuComponent dinerMenu = new Menu("DINER MENU", "Lunch");
+        MenuComponent cafeMenu = new Menu("CAFE MENU", "Dinner");
+        MenuComponent dessertMenu = new Menu("DESSERT MENU", "Dessert of course!");
+
+        MenuComponent allMenus = new Menu("ALL MENUS", "All menus combined");
+        allMenus.add(pancakeHouseMenu);
+        allMenus.add(dinerMenu);
+        allMenus.add(cafeMenu);
+
+
+
+        dinerMenu.add(new MenuItem("Pasta", "Spagetti with Marinara Sauce, and slice of sourdough bread", true, 3.89));
+        dinerMenu.add(dessertMenu);
+        dessertMenu.add(new MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
+
+        Waitress waitress = new Waitress(allMenus);
         waitress.printMenu();
     }
-
-
-
 
 }
