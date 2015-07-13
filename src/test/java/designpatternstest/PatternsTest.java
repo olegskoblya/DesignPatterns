@@ -55,11 +55,13 @@ public class PatternsTest extends Assert {
 
 
         dinerMenu.add(new MenuItem("Pasta", "Spagetti with Marinara Sauce, and slice of sourdough bread", true, 3.89));
+        dinerMenu.add(new MenuItem("Meat", "Bloody meat", false, 100.00));
         dinerMenu.add(dessertMenu);
         dessertMenu.add(new MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
 
         Waitress waitress = new Waitress(allMenus);
         waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
 
 }
