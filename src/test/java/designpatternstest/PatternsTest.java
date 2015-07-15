@@ -6,6 +6,7 @@ import com.company.managedcollections.second.MenuItem;
 import com.company.managedcollections.second.Waitress;
 import com.company.singleton.Singleton;
 import com.company.singleton.chocolate1.ChocolateBoiler;
+import com.company.state.GumballMachine;
 import com.company.templatemethod.exercise1.Coffee;
 import com.company.templatemethod.exercise1.Tea;
 import org.junit.After;
@@ -62,6 +63,42 @@ public class PatternsTest extends Assert {
         Waitress waitress = new Waitress(allMenus);
         waitress.printMenu();
         waitress.printVegetarianMenu();
+    }
+
+    @Test
+    public void gumballTestDrive() {
+        GumballMachine gumballMachine = new GumballMachine(5);
+
+        System.out.println(gumballMachine);
+
+        gumballMachine.insertQuarter();
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
+
+        gumballMachine.insertQuarter();
+        gumballMachine.ejectQuarter();
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
+
+        gumballMachine.insertQuarter();
+        gumballMachine.turnCrank();
+        gumballMachine.insertQuarter();
+        gumballMachine.turnCrank();
+        gumballMachine.ejectQuarter();
+
+        System.out.println(gumballMachine);
+
+        gumballMachine.insertQuarter();
+        gumballMachine.insertQuarter();
+        gumballMachine.turnCrank();
+        gumballMachine.insertQuarter();
+        gumballMachine.turnCrank();
+        gumballMachine.insertQuarter();
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
     }
 
 }
