@@ -75,6 +75,7 @@ public class GumballMachine {
     }
 
     public void dispense() {
+
         switch (state) {
             case SOLD:
                 System.out.println("A gumball comes rolling out the slot");
