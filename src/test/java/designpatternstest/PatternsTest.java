@@ -6,7 +6,7 @@ import com.company.managedcollections.second.MenuItem;
 import com.company.managedcollections.second.Waitress;
 import com.company.singleton.Singleton;
 import com.company.singleton.chocolate1.ChocolateBoiler;
-import com.company.state.GumballMachine;
+import com.company.state.state1.GumballMachine;
 import com.company.templatemethod.exercise1.Coffee;
 import com.company.templatemethod.exercise1.Tea;
 import org.junit.After;
