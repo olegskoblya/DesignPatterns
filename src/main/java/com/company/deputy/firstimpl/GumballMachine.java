@@ -1,10 +1,13 @@
 package com.company.deputy.firstimpl;
 
+import java.rmi.*;
+import java.rmi.server.*;
+
 /**
  * Created by oskoblya on 16.07.2015.
  */
 
-public class GumballMachine {
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote{
     private State soldOutState;
     private State noQuarterState;
     private State hasQuarterState;
@@ -16,7 +19,7 @@ public class GumballMachine {
     int count = 0;
 
 
-    public GumballMachine(String location, int numberGumballs) {
+    public GumballMachine(String location, int numberGumballs) throws RemoteException{
         this.soldOutState = new SoldOutState(this);
         this.noQuarterState = new NoQuarterState(this);
         this.hasQuarterState = new HasQuarterState(this);

@@ -1,12 +1,13 @@
 package com.company.deputy.firstimpl;
 
+import java.io.Serializable;
 import java.util.Random;
 
 /**
  * Created by oskoblya on 16.07.2015.
  */
 public class HasQuarterState implements State {
-    GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
     Random randomWinner = new Random(System.currentTimeMillis());
 
 

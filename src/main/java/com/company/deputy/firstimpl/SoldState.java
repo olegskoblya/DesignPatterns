@@ -1,10 +1,12 @@
 package com.company.deputy.firstimpl;
 
+import java.io.Serializable;
+
 /**
  * Created by oskoblya on 16.07.2015.
  */
 public class SoldState implements State {
-    private GumballMachine gumballMachine;
+    transient private GumballMachine gumballMachine;
 
     public SoldState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
